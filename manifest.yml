@@ -1,9 +1,4 @@
 applications:
 - name: bottle-currency
+  host: bottle-currency-${random-word}
   mem: 128M
-  services:
-    ${name}-db:
-      type: redis
-  stackato:
-    min_version:
-      client: 1.4.3
